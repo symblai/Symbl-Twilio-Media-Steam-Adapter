@@ -26,7 +26,7 @@ Stream Server that connect Twilio Media Stream to Symbl using WebSocket and expo
    - Alternative one:  For local testing first run ```ngrok http 8000``` and copy and save the full secure forwarding address from ngrok to your Twilio account --> Phone numbers --> Active Phone Numbers --> select the phone number you would like to update --> Under "Message and Voice" in the "Webhook" value. then copy the same fowarding address to ```TWILIO_WEBHOOK``` but remove the "https://" from it. 
    - Alternative two (Shorter approach): To update your Twilio Phone Voice with ngrok link open a console or command line and run this command with your twilio phone number ```twilio phone-numbers:update <Your Twilio phone Number> --voice-url=https://localhost:8000```. At this point your Phone number Voice and Messages Webhook is already updated with the new generated value. Copy the same forwarding value to ```TWILIO_WEBHOOK``` but remove the "https://" from it.
 5. Save the file. 
-Note: For real server testing - For step 4 and 5 modify ```TWILIO_WEBHOOK``` and ```TWILIO_WEBHOOK``` with servers addresses instead of ngrok. 
+- Note: For real server testing - For step 4 and 5 modify ```TWILIO_WEBHOOK``` and ```TWILIO_WEBHOOK``` with your servers addresses similarly to ngrok steps above. 
 
 # How to run:
 - Run in your terminal or command line  ```node clientServer.js```.
