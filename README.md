@@ -31,6 +31,6 @@
 # How to run:
 - Run in your terminal or command line  ```node clientServer.js```.
 - Run in your terminal or command line  ```node streamServer.js```.
-- Now up to 4 people can call to your Twilio registered phone number and trasncript, topics and inights of the conversation will be shown in the clientServer terminal or command line. 
+- Now up to 4 people can call to your Twilio registered phone number and trasncript messages, topics and inights of the conversation will be shown in the clientServer terminal or command line. 
 
 
