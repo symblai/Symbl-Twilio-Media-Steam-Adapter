@@ -26,7 +26,7 @@
    - For local testing first run ```ngrok http 8000``` and copy and save the full secure forwarding address from ngrok to your Twilio account --> Phone numbers --> Active Phone Numbers --> select the phone number you would like to update --> Under "Message and Fax" in the Voice "Webhook" value includeing '/' at the end. then copy the same fowarding address to ```TWILIO_WEBHOOK``` but remove the "https://" from it. For example for "https://127c7b383137.ngrok.io/" use only this value "127c7b383137.ngrok.io" in ```TWILIO_WEBHOOK```.
 
 5. Save the file. 
-- Note: For real server testing - For step 3 and 4 modify ```TWILIO_WEBHOOK``` and ```TWILIO_WEBHOOK``` with your servers addresses similarly to ngrok steps above. 
+- Note: For real server testing - For step 3 and 4 modify ```CLIENT_WEBHOOK``` and ```TWILIO_WEBHOOK``` with your servers addresses similarly to ngrok steps above. 
 
 # How to run:
 - Run in your terminal or command line  ```node clientServer.js```.
