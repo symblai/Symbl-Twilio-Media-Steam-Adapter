@@ -5,9 +5,9 @@ Stream Server that connect Twilio Media Stream to Symbl using WebSocket and expo
 ![alt text](https://guysapir-postman-experiment-bucket.s3-us-west-2.amazonaws.com/Screen+Shot+2021-03-02+at+2.55.23+PM.png)
 
 # Pre-requiremetns
-- Twilio account - If you don't have a Twilio account you can these steps [Link](https://www.twilio.com/try-twilio)
+- Twilio account - If you don't have a Twilio account you can look it up in this [Link](https://www.twilio.com/try-twilio)
 - Twilio purchaced phone number - If you don't have a Twilio purchaced number you can look for these steps [Link](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console)
-- This step is not a must but make it easier to later setup Twilio Voice Webhook server -  Twilio installed CLI - If you don't have a Twilio CLI installed you can look for these steps [Link](https://www.twilio.com/docs/twilio-cli/quickstart)
+- Twilio CLI - This step is not a must but make it easier to later setup Twilio Voice Webhook from a terminal or command line - If you don't have a Twilio CLI installed you can look for these steps [Link](https://www.twilio.com/docs/twilio-cli/quickstart)
 
 
 # How to install repository pacakge
