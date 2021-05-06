@@ -1,7 +1,7 @@
 # Symbl-Twilio-Media-Steam-Adapter
 
 - Stream Server that connect Twilio Media Stream to Symbl using WebSocket and exposes a REST API of Symbl’s real-time events to a Client server.
-- Up to 4 speaker can call to a Twilio number, so each phone stream get into a separate WebSocket channel that is directed to Symbl and once conversation transcripts messages, topics or insights are identified they are immediatly addressed to another clientServer that servers as a webhook point.  
+- Up to 4 speaker can call to a Twilio number and start a conversation, so each phone stream get into a separate WebSocket channel that is directed to Symbl and once conversation transcripts messages, topics or insights are identified they are immediatly addressed in real-time to another clientServer that servers as a webhook point.  
 
 ![alt text](https://guysapir-postman-experiment-bucket.s3-us-west-2.amazonaws.com/Screen+Shot+2021-03-02+at+2.55.23+PM.png)
 
@@ -13,12 +13,13 @@
 
 
 # How to install repository pacakge
-- Download by using ```git clone https://github.com/symblai/Symbl-Twilio-Media-Steam-Adapter```.
-- Get into the downloaded folder by ```Symbl-Twilio-Media-Steam-Adapter```.
-- Run ```npm install```.
+- Open command line or terminal
+- Download by using the command ```git clone https://github.com/symblai/Symbl-Twilio-Media-Steam-Adapter```.
+- Get into the downloaded folder using the command ```cd Symbl-Twilio-Media-Steam-Adapter```.
+- Run the command ```npm install```.
 
 # How to setup
-- Open .env and modify the following fields:
+- Open .env file and modify the following fields:
 1. Add ```SYMBL_APP_ID``` with your Symbl appId.
 2. Add ```SYMBL_APP_SECRET``` with your Symbl appSecret.
 3. Update ```CLIENT_WEBHOOK``` - For local testing from a terminal or command line run ```ngrok http 9000```. Copy the secure forwarding value to ```CLIENT_WEBHOOK``` but remove the "https://" from it. For example if you got the value "https://dda80552256c.ngrok.io/" only use this value "dda80552256c.ngrok.io". 
@@ -29,8 +30,8 @@
 - Note: For real server testing - For step 3 and 4 modify ```CLIENT_WEBHOOK``` and ```TWILIO_WEBHOOK``` with your servers addresses similarly to ngrok steps above. 
 
 # How to run:
-- Run in your terminal or command line  ```node clientServer.js```.
-- Run in your terminal or command line  ```node streamServer.js```.
-- Now up to 4 people can call to your Twilio registered phone number and trasncript messages, topics and inights of the conversation will be shown in the clientServer terminal or command line. 
+- In the folder location ./Symbl-Twilio-Media-Steam-Adapter run in your terminal or command line  ```node clientServer.js```.
+- In the folder location ./Symbl-Twilio-Media-Steam-Adapter run in your terminal or command line  ```node streamServer.js```.
+- Now up to 4 people can call to your Twilio registered phone number to start a conversation and trasncript messages, topics and inights of the conversation will be shown in real-time in the clientServer terminal or command line. 
 
 
