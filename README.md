@@ -9,8 +9,6 @@ Symbl's APIs empower developers to enable:
 
 <hr />
 
-
-
 ## Pre-requisites
 
 - Symbl appSecret and appId - If you don't have a Symbl account for signup look it up in this [Link](https://platform.symbl.ai/#/signup).
@@ -47,7 +45,7 @@ Symbl's APIs empower developers to enable:
 
 10. Save the .env file. 
 
-   - Note: For real server testing - For step 3 and 4 modify ```CLIENT_WEBHOOK``` and ```TWILIO_WEBHOOK``` with your servers addresses similarly to ngrok steps above. 
+      Note: For real server testing - For step 3 and 4 modify ```CLIENT_WEBHOOK``` and ```TWILIO_WEBHOOK``` with your servers addresses similarly to ngrok steps above. 
 
 11. In the folder location ./Symbl-Twilio-Media-Steam-Adapter run in your terminal or command line  ```node clientServer.js```.
 
