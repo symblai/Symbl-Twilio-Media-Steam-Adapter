@@ -27,13 +27,21 @@ Symbl's APIs empower developers to enable:
 
 # Setup and Deploy
 1. Open command line or terminal
+
 2. Download by using the command ```git clone https://github.com/symblai/Symbl-Twilio-Media-Steam-Adapter```.
+
 3. Get into the downloaded folder using the command ```cd Symbl-Twilio-Media-Steam-Adapter```.
+
 4. Run the command ```npm install```.
+
 5. Open .env file and modify the following fields:
+
 6. Add ```SYMBL_APP_ID``` with your Symbl appId.
+
 7. Add ```SYMBL_APP_SECRET``` with your Symbl appSecret.
+
 8. Update ```CLIENT_WEBHOOK``` - For local testing from a terminal or command line run ```ngrok http 9000```. Copy the secure forwarding value to ```CLIENT_WEBHOOK``` but remove the "https://" from it. For example if you got the value "https://dda80552256c.ngrok.io/" only use this value "dda80552256c.ngrok.io". 
+
 9. Update  ```TWILIO_WEBHOOK``` - To update your Twilio active phone number and the ```TWILIO_WEBHOOK``` in .env:
    - For local testing first run ```ngrok http 8000``` and copy and save the full secure forwarding address from ngrok to your Twilio account --> Phone numbers --> Active Phone Numbers --> select the phone number you would like to update --> Under "Message and Fax" in the Voice "Webhook" value including '/' at the end and save this Twilio configuration. then copy the same fowarding address to ```TWILIO_WEBHOOK``` but remove the "https://" from it. For example for "https://127c7b383137.ngrok.io/" use only this value "127c7b383137.ngrok.io" in ```TWILIO_WEBHOOK```.
 
@@ -42,6 +50,7 @@ Symbl's APIs empower developers to enable:
    - Note: For real server testing - For step 3 and 4 modify ```CLIENT_WEBHOOK``` and ```TWILIO_WEBHOOK``` with your servers addresses similarly to ngrok steps above. 
 
 11. In the folder location ./Symbl-Twilio-Media-Steam-Adapter run in your terminal or command line  ```node clientServer.js```.
+
 12. In the folder location ./Symbl-Twilio-Media-Steam-Adapter run in your terminal or command line  ```node streamServer.js```.
 
 ## Conclusion 
